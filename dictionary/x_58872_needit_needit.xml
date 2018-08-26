@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="1" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" default="legal 1" label="what needed" mandatory="true" max_length="40" name="u_choice_6" type="string">
+            <choice>
+                <element label="Human Resources1" sequence="0" value="Human Resources1"/>
+                <element label="Human resources2" sequence="1" value="Human resources2"/>
+                <element label="Fcalities1" sequence="2" value="Fcalities1"/>
+                <element label="facities2" sequence="3" value="facities2"/>
+                <element label="legal 1" sequence="4" value="legal 1"/>
+                <element label="legal 2" sequence="5" value="legal 2"/>
+                <element label="Your Department choices1" sequence="6" value="Your Department choices1"/>
+                <element label="Your Department Choices 2" sequence="7" value="Your Department Choices 2"/>
+            </choice>
+        </element>
+        <element label="New Due Date" max_length="40" name="u_due_date_2" type="due_date"/>
+        <element label="New Date/Time" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+            <choice>
+                <element label="Human Resources" sequence="0" value="HR"/>
+                <element label="Facilities" sequence="1" value="Facilities"/>
+                <element label="Legal" sequence="2" value="Legal"/>
+                <element label="Your Department Choice" sequence="3" value="Your Department Choice"/>
+            </choice>
+        </element>
+        <element label="When needed" max_length="40" name="u_when_needed" type="glide_date_time"/>
+    </element>
+</database>
